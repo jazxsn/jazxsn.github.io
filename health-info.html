@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: azure;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quezon City Health Monitoring </title>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+        <h1 id="head"> District 5 Health Status and Covid-19 Tracking </h1>
+        <p id="description"> Gathering vital health information to protect and serve our community </p>
+    </header>
+    </div>
+
+    <hr>
+
+    <div class="HealthInfo">
+        <p>Health Information</p>
+        <form>
+            <label for="vaccination"> Vaccination Status </label> <br>
+            <select name="vaccination" id="vaccination">
+                <option value=""> --- Select --- </option>
+                <option value="Vaccinated"> Vaccinated </option>
+                <option value="Unvaccinated"> Unvaccinated </option>
+            </select>
+
+            <p> If Vaccinated, what brand it is? </p>
+            <input type="radio" name="vaxtype" id="vaxtype1">
+            <label for="vaxtype"> AstraZeneca </label> <br>
+            <input type="radio" name="vaxtype" id="vaxtype2">
+            <label for="vaxtype"> Pfizer </label> <br>
+            <input type="radio" name="vaxtype" id="vaxtype3">
+            <label for="vaxtype"> Sinovac </label> <br>
+            <input type="radio" name="vaxtype" id="vaxtype4">
+            <label for="vaxtype"> Johnson & Johnson </label> <br>
+            <input type="radio" name="vaxtype" id="vaxtype5">
+            <label for="vaxtype"> Moderna </label> <br>
+            <input type="radio" name="vaxtype" id="vaxtype6">
+            <label for="vaxtype"> Sinopharm </label> <br>
+            <input type="radio" name="vaxtype" id="vaxtype7">
+            <label for="vaxtype"> Sputnik </label> <br>
+
+            <p> If Unvaccinated, are you willing for vaccination? </p>
+            <input type="radio" name="unvac" id="unvac1">
+            <label for="unvac"> Yes </label> <br>
+            <input type="radio" name="unvac" id="unvac2">
+            <label for="unvac"> No </label>
+
+        </form>
+    </div>
+    
+
+
+    <div>
+       <form> 
+        <p> Recent Symptoms </p>
+        <input type="checkbox" name="symptoms" id="symptoms1">
+        <label for="symptoms1"> Fever </label> <br>
+        <input type="checkbox" name="symptoms" id="symptoms2">
+        <label for="symptoms2"> Cough </label> <br>
+        <input type="checkbox" name="symptoms" id="symptoms3">
+        <label for="symptoms3"> Fatigue </label> <br> <br>
+        <label for="symptoms"> Others (Please Specify) </label> <br>
+        <input type="text" name="symptoms" id="symptoms4"> 
+       </form> 
+       <br>
+    </div>
+
+    <div>
+        <label for="checkup"> Last Medical Check-up </label> <br>
+        <input type="date" id="checkup" name="checkup" min="2000-01-01" max="2025-05-31">
+    </div>
+    
+    <div>
+        <br>
+        <label for="notes"> Additional Health Notes </label> <br>
+        <input type="text" name="notes">
+    </div>
+
+    <br><br>
+    <button onclick="history.back()">Back</button>
+    <button type="submit">Submit</button>
+</body>
+</html>

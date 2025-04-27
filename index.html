@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: azure;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quezon City Health Monitoring </title>
+</head>
+
+<style>
+    body {
+        background-color: azure;
+        font-family: Arial, sans-serif;
+    }
+
+    .PersonalInfo p{
+        font-size: 25px;
+        margin-top: 0%;
+    }
+
+    .PersonalInfo {
+        background-color: white;
+        width: 500px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .PersonalInfo input[name="age"]{
+        width: 60px;
+    }
+
+    .header {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="email"],
+    form select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form input[type="radio"] {
+        width: auto; /* This keeps the radio buttons small! */
+        margin-right: 10px;
+    }
+
+    form button {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+
+<body>
+    <div class="header">
+        <header>
+        <h1 id="head"> District 5 Health Status and Covid-19 Tracking </h1>
+        <p id="description"> Gathering vital health information to protect and serve our community </p>
+    </header>
+    </div>
+
+    <div class="PersonalInfo">
+        <p>Personal Information</p> 
+        <form action="health-info.html" method="get">
+            <label for="fname"> First Name </label> <br>
+            <input type="text" name="fname" id="fname" placeholder="Enter First Name" required><br>
+            <label for="mname"> Middle Name </label> <br>
+            <input type="text" name="mname" id="mname" placeholder="Enter your Middle Name (optional)"> <br>
+            <label for="sname"> Last Name </label><br>
+            <input type="text" name="sname" id="sname" placeholder="Enter your Last Name" required> <br>
+
+            <label for="age"> Age </label><br>
+            <input type="number" name="age" min="1" max="120" required><br>
+
+            <label for="email"> Email Address </label> <br>
+            <input type="text" name="email" id="email" placeholder="@gmail.com" required> <br>
+            <label for="number"> Phone Number </label> <br>
+            <input type="text" min="11" max="11" required> <br>
+
+            <p> Gender </p>
+            <input type="radio" id="gender1" name="gender" value="Male" required>
+            <label for="gender1"> Male </label> <br>
+            <input type="radio" id="gender2" name="gender" value="Female" required>
+            <label for="gender2"> Female </label> <br>
+            <input type="radio" id="gender3" name="gender" value="Other" required>
+            <label for="gender3"> Other </label>
+
+            <br> <br>
+            <p> Address </p>
+            <label for="street">Street/Lot #, Street Name, Village/Subdivision Name</label><br>
+            <input type="text" name="street" required><br>
+            
+            <label for="barangay"> Barangay </label><br>
+            <select name="barangay" id="barangay" required>
+                <option value=""> --- Select --- </option>
+                <option value="Bagbag"> Bagbag </option>
+                <option value="Capri"> Capri </option>
+                <option value="Fairview"> Fairview </option>
+                <option value="Gulod"> Gulod </option>
+                <option value="Greater Lagro"> Greater Lagro </option>
+                <option value="Kaligayahan"> Kaligayahan </option>
+                <option value="Nagkaisang Nayon"> Nagkaisang Nayon </option>
+                <option value="North Fairview"> North Fairview </option>
+                <option value="Novaliches Proper"> Novaliches Proper </option>
+                <option value="Pasong Putik Proper"> Pasong Putik Proper </option>
+                <option value="San Agustin"> San Agustin </option>
+                <option value="San Bartolome"> San Bartolome </option>
+                <option value="Sta. Lucia"> Sta. Lucia </option>
+                <option value="Sta. Monica"> Sta. Monica </option>
+            </select>
+
+            <br><br>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>
